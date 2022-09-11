@@ -81,10 +81,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
     [2] = LAYOUT_moonlander(                                                                                                                                                                                     // Function
         KC_ESCAPE, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DELETE,                                                                                             // Row 2
-        KC_NO, KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP, RGB_VAD, RGB_VAI, RGB_TOG, AU_TOG, KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK, KC_UP, KC_AUDIO_MUTE, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, // Row 1
-        KC_NO, MOON_LED_LEVEL, KC_NO, RGB_SLD, TOGGLE_LAYER_COLOR, RGB_MOD, TO(6), KC_NO, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO, KC_NO,                                                                     // Row 0
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_MS_WH_UP, KC_MS_WH_DOWN, KC_PGDOWN, KC_HOME, KC_NO, KC_NO, KC_NO, KC_NO,                                                                                                  // Row -1
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_END, KC_NO, KC_NO, KC_NO, TO(0),                                                                                                                     // Row -2
+        KC_TRANSPARENT, KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP, RGB_VAD, RGB_VAI, RGB_TOG, AU_TOG, KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK, KC_UP, KC_AUDIO_MUTE, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, // Row 1
+        KC_TRANSPARENT, MOON_LED_LEVEL, KC_NO, RGB_SLD, TOGGLE_LAYER_COLOR, RGB_MOD, TO(6), KC_NO, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO, KC_TRANSPARENT,                                                                     // Row 0
+        KC_TRANSPARENT, KC_NO, KC_NO, KC_NO, KC_MS_WH_UP, KC_MS_WH_DOWN, KC_PGDOWN, KC_HOME, KC_NO, KC_NO, KC_NO, KC_TRANSPARENT,                                                                                                  // Row -1
+        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO, KC_NO, KC_NO, KC_END, KC_NO, KC_NO, KC_NO, TO(0),                                                                                                                     // Row -2
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO                                                                                                                                                                 // Thumb
         ),
     [3] = LAYOUT_moonlander(                                                                                                           // Symbols
@@ -104,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO                                                                                        // Thumb
         ),
     [5] = LAYOUT_moonlander(                                                                                                      // VSCode                                                                                                                                                                            // a
-        KC_NO, KC_F1, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_F7, KC_F8, KC_F9, LALT(LSFT(KC_F10)), KC_NO, KC_NO, KC_NO,            // Row 2
+        KC_NO, KC_F1, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_F7, KC_F8, KC_F9, LALT(LGUI(LCTL(KC_R))), KC_NO, KC_NO, KC_NO,            // Row 2
         KC_NO, KC_NO, LSFT(KC_F4), LSFT(KC_F7), LSFT(KC_F6), KC_NO, KC_NO, KC_NO, LSFT(KC_F8), KC_NO, KC_UP, KC_NO, KC_NO, KC_NO, // Row 1
         KC_NO, KC_NO, KC_F4, KC_F7, TD(DANCE_4), KC_NO, KC_NO, KC_NO, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO, KC_NO,          // Row 0
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_PGDOWN, KC_HOME, KC_NO, KC_NO, KC_NO, KC_NO,                                 // Row -1
